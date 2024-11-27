@@ -46,15 +46,19 @@ public class Main {
         System.out.println(taskManager.subtasks);
 
         System.out.println("Вывод всех подзадач эпика по id эпика:");
-        System.out.println(taskManager.gettingEpicSubtasks(3));
+        System.out.println(taskManager.getEpicSubtasks(3));
         System.out.println("Вывод задачи по id:");
-        System.out.println(taskManager.gettingById(5));
+        System.out.println(taskManager.getTaskById(5));
         System.out.println("Удалить задачу по id:");
-        taskManager.deletionById (7);
+        taskManager.deleteTaskById (7);
         System.out.println("Вывод всех задач:");
-        System.out.println(taskManager.displayingListOfTasks ()); // Печать всех задач
+        System.out.println(taskManager.getListOfTasks());
+        System.out.println(taskManager.getListOfEpics());
+        System.out.println(taskManager.getListOfSubtasks());
         System.out.println("Удаление всех задач:");
-        taskManager.deletingAllTasks();
-        System.out.println(taskManager.displayingListOfTasks ());
+        taskManager.deleteAllTasks();
+        System.out.println(taskManager.getListOfTasks ());
+        System.out.println(taskManager.getListOfEpics());
+        System.out.println(taskManager.getListOfSubtasks());
     }
 }
