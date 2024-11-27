@@ -7,7 +7,7 @@ public class Epic extends Task {
         super(id, title, description);
     }
 
-    public void addSubtasksIds (int id) {
+    public void addSubtakId (int id) {
         subtasksIds.add(id);
     }
 
@@ -18,7 +18,7 @@ public class Epic extends Task {
     @Override
     public String toString() {
         return "Epic{" +
-                "subtasksIds=" + subtasksIds +
+                "subtaskId=" + subtasksIds +
                 "} " + super.toString();
     }
 }
